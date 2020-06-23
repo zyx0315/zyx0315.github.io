@@ -511,12 +511,12 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;Life
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+            在人生的旅途中，最糟糕的境遇往往不是贫困，不是厄运，而是精神和心境处于一种无知无觉的疲惫状态：感动过你的一切不能再感动你，吸引过你的一切不能再吸引你，甚至激怒过你的一切不能再激怒你。这时，人需要寻找另一片风景。
         </div>
     </div>
 </div>
@@ -524,6 +524,42 @@
                     
 
                     
+
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;家乡常州
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                     style="height: 400px;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: 'https://vdept.bdstatic.com/62417654786878464e6c4e6874445142/7072344764494e32/b76bb3489ad4a5851e20dc7cbf6b55647fc3047098851b469fc577c390cd9f8d4ec4efe1c7a2cc63eab48a0e94ef967e.mp4?auth_key=1592931603-0-0-fbeb598276fb6ac44c505b7a0874a105',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
 
                     
 
@@ -596,16 +632,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
