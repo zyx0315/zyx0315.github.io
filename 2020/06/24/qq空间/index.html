@@ -242,6 +242,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = 'cs';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -397,7 +410,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4
+                    0
                 </div>
                 
 
@@ -419,7 +432,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>测试专用<img src="/.io//xxx.png" alt="xxx"></p>
+                <p><img src="/.io//xxx.png" alt="x"></p>
 
             </div>
             <hr/>
@@ -669,7 +682,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            测试专用
+                            
 
                         
                     </div>
@@ -716,7 +729,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            测试专用
+                            
 
                         
                     </div>
@@ -940,7 +953,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4</span>&nbsp;字
+                class="white-color">0</span>&nbsp;字
             
             
             
